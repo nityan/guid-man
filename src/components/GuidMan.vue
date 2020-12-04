@@ -1,11 +1,10 @@
 <template>
-  <div>
-    <img alt="Need a GUID?" src="../assets/need-a-guid.png">
-    <h1>{{ message }}</h1>
-    <button v-on:click="generateGuid()">Generate a GUID</button>
-  <div>
+  <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+    <img alt="Need a GUID?" src="../assets/need-a-guid.png" class="img-fluid">
+    <div>
+      <button class="btn btn-primary" v-on:click="generateGuid()">Generate a GUID</button>
+    </div>
     <span>{{ guid }}</span>
-  </div>
   </div>
 </template>
 
@@ -26,21 +25,3 @@ export default {
   }
 }
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
-</style>
