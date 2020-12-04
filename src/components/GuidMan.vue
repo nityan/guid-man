@@ -21,7 +21,7 @@ export default {
   },
   methods: { 
     generateGuid() {
-      this.guid = uuid.v4()
+      this.guid = uuid.v4().toUpperCase()
     }
   }
 }
