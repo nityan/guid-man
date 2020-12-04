@@ -2,10 +2,10 @@
   <div>
     <img alt="Need a GUID?" src="../assets/need-a-guid.png">
     <h1>{{ message }}</h1>
+    <button v-on:click="generateGuid()">Generate a GUID</button>
   <div>
     <span>{{ guid }}</span>
   </div>
-    <button v-on:click="generateGuid()">Generate a GUID</button>
   </div>
 </template>
 
