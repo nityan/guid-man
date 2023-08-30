@@ -12,6 +12,7 @@ jobs:
     - uses: actions/setup-node@v3
       with:
         node-version: 16
-    - run: |
-        npm i
-        npm run build
+    - name: Install node packages
+      run: npm i
+    - name: Build
+      run: npm run build
