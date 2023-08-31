@@ -1,10 +1,12 @@
 <template>
-	<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+	<div>
 		<img alt="Need a GUID?" src="../assets/need-a-guid.png" class="img-fluid" />
 		<div>
-			<button class="btn btn-primary" v-on:click="generateGuid()">Generate a GUID</button>
+			<v-btn v-on:click="generateGuid()" color="primary">Generate a GUID</v-btn>
+			<div>
+				<span>{{ guid }}</span>
+			</div>
 		</div>
-		<span>{{ guid }}</span>
 	</div>
 </template>
 
